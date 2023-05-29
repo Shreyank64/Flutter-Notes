@@ -43,15 +43,31 @@ class MyApp extends StatelessWidget {
               final user = FirebaseAuth.instance.currentUser;
               if (user?.emailVerified ?? false) {
                 showToast('You are a verified user');
+
               }
               else{
                 showToast('You need to verify your email!');
+                Navigator.of(context).push(MaterialPageRoute(builder: (context) => const VerifyEmailView(),));
               }
               return const Text('Done');
+
             }
           },
         ),
       ),
     );
+  }
+}
+class VerifyEmailView extends StatefulWidget {
+  const VerifyEmailView({Key? key}) : super(key: key);
+
+  @override
+  State<VerifyEmailView> createState() => _VerifyEmailViewState();
+}
+
+class _VerifyEmailViewState extends State<VerifyEmailView> {
+  @override
+  Widget build(BuildContext context) {
+    return const Scaffold();
   }
 }
