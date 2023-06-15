@@ -32,4 +32,3 @@ class AuthService implements AuthProvider {
   Future<void> sendEmailVerification() => provider.sendEmailVerification();
   }
   
-}
