@@ -12,7 +12,7 @@ class AuthService implements AuthProvider {
   }) =>
       provider.createUser(
           email: email,
-          password: password,
+          password: password,//ttest
       );
 
 
