@@ -1,7 +1,7 @@
 <<<<<<< HEAD
-# untitled
+# Flutter Notes
 
-A new Flutter project.
+A Notes app built using Flutter and Firebase
 
 ## Getting Started
 
