@@ -72,6 +72,7 @@ class HomePage extends StatelessWidget {
     );
   }
 }
+enum MenuAction{ logout }
 
 void showToast(String message) {
   Fluttertoast.showToast(
